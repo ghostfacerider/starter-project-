@@ -1,4 +1,4 @@
-# Website Project Starter Kit
+# Jesse Showalter Website Project Starter Kit
 
 This is how I start my project, maybe you can use it too :) This  starter file is a collectiopn of things I have learned over the years, code snippets I have created and other that were collected from other people who are smarter than me to make soimething I really enjoy using.
 

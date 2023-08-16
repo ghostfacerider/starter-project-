@@ -1,38 +1,40 @@
 // Gulp loader
-
-const {
+import gulp from 'gulp'
+const{
     src,
     dest,
     task,
     watch,
     series,
     parallel
-} = require('gulp');
+} = gulp;
 
 // --------------------------------------------
 // Dependencies
 // --------------------------------------------
 
 // CSS / SASS plugins
-let sass = require('gulp-sass');
-let autoprefixer = require('gulp-autoprefixer');
-let minifycss = require('gulp-clean-css');
+import sass from 'gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
+import minifycss from 'gulp-clean-css';
 
 // JSS / plugins
-let uglify = require('gulp-uglify');
+import uglify from 'gulp-uglify';
 
 // Utility plugins
-let concat = require('gulp-concat');
-let del = require('del');
-let plumber = require('gulp-plumber');
-let sourcemaps = require('gulp-sourcemaps');
-let rename = require('gulp-rename');
+import concat from 'gulp-concat';
+
+
+import plumber from 'gulp-plumber';
+import sourcemaps from 'gulp-sourcemaps';
+import rename from 'gulp-rename';
 
 // Browser plugins
-let browserSync = require('browser-sync').create();
+import bs from 'browser-sync';
+const browserSync = bs.create();
 
 // Images plugins
-let images = require('gulp-imagemin');
+import images from 'gulp-imagemin';
 
 
 // Project Variables
